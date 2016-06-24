@@ -1,0 +1,10 @@
+framework module SensoroSensorKit {
+  umbrella header "SensoroSensorKit.h"
+
+  export *
+  module * { export * }
+}
+
+module SensoroSensorKit.Swift {
+    header "SensoroSensorKit-Swift.h"
+}
