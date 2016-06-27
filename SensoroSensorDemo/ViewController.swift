@@ -13,6 +13,8 @@ class ViewController: UIViewController, UITableViewDataSource, SensoroDeviceMana
 
     @IBOutlet var deviceList : UITableView!;
     
+    var started = true;
+    
     var devices = [SensoroDevice]();
     
     override func viewDidLoad() {
@@ -26,6 +28,23 @@ class ViewController: UIViewController, UITableViewDataSource, SensoroDeviceMana
         
         version.text =  String(format: "%.2f", SensoroSensorKitVersionNumber);
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(customView: version);
+        
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Stop",
+                                                                style: .Plain,
+                                                                target: self,
+                                                                action: #selector(scanAction));
+    }
+    
+    func scanAction(){
+        if started == true {
+            SensoroDeviceManager.sharedInstance.stopScan();
+            self.navigationItem.leftBarButtonItem?.title = "Start";
+            started = false;
+        }else{
+            SensoroDeviceManager.sharedInstance.startScan();
+            self.navigationItem.leftBarButtonItem?.title = "Stop";
+            started = true;
+        }
     }
     
     override func didReceiveMemoryWarning() {
@@ -49,6 +68,7 @@ class ViewController: UIViewController, UITableViewDataSource, SensoroDeviceMana
     
     func deviceManager(manager: SensoroDeviceManager, didRangeDevices devices: [SensoroDevice]) {
         
+        deviceList.reloadData();
     }
     
     // MARK: UITableViewDataSource

@@ -169,6 +169,8 @@ SWIFT_CLASS("_TtC16SensoroSensorKit13SensoroDevice")
 SWIFT_CLASS("_TtC16SensoroSensorKit20SensoroDeviceManager")
 @interface SensoroDeviceManager : NSObject
 + (SensoroDeviceManager * _Nonnull)sharedInstance;
+- (void)startScan;
+- (void)stopScan;
 
 /// the delegate to receive the events
 ///

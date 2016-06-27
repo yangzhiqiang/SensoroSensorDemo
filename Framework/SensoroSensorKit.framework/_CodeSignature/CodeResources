@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/SensoroSensorKit-Swift.h</key>
 		<data>
-		Yn/COTN415KG01XwRgZwzAoKN/M=
+		v3scyqu5QXZW0mEmkwCyLkwTyj8=
 		</data>
 		<key>Headers/SensoroSensorKit.h</key>
 		<data>
@@ -14,7 +14,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Ttwc+GQJWJjEEOMG1P1UKml1G3k=
+		2HqzZvd74axj3reqn8k36vNAkXs=
+		</data>
+		<key>Modules/SensoroSensorKit.swiftmodule/arm.swiftdoc</key>
+		<data>
+		/F5o+fhZd1gGpUeRrQkQlSq/W8E=
+		</data>
+		<key>Modules/SensoroSensorKit.swiftmodule/arm.swiftmodule</key>
+		<data>
+		JuRAOMpF9SATenXDEdM4hO35MMU=
 		</data>
 		<key>Modules/SensoroSensorKit.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -22,7 +30,7 @@
 		</data>
 		<key>Modules/SensoroSensorKit.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		bia2bopCVTgppcY1IFV06gUfc5w=
+		tpev6i6YYnkoNs8UMnqDoiX41MQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -35,11 +43,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Yn/COTN415KG01XwRgZwzAoKN/M=
+			v3scyqu5QXZW0mEmkwCyLkwTyj8=
 			</data>
 			<key>hash2</key>
 			<data>
-			jnOUxginLsw8H4Hg07cFsO+BMtxZBGwa+75nhoTucJw=
+			8bDLWFRX1FEJkjqqW3WsfQh4u2fjK6B5a5pOsD90D54=
 			</data>
 		</dict>
 		<key>Headers/SensoroSensorKit.h</key>
@@ -51,6 +59,28 @@
 			<key>hash2</key>
 			<data>
 			r8BVaBn+ExjHet4HD9lgOKTPzTyXMLSy5BDF5GcTuY0=
+			</data>
+		</dict>
+		<key>Modules/SensoroSensorKit.swiftmodule/arm.swiftdoc</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			/F5o+fhZd1gGpUeRrQkQlSq/W8E=
+			</data>
+			<key>hash2</key>
+			<data>
+			vt1H3uCYEYjClvVKCsnEzgdmnpNYJE9G3SbT9Z3pBVg=
+			</data>
+		</dict>
+		<key>Modules/SensoroSensorKit.swiftmodule/arm.swiftmodule</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			JuRAOMpF9SATenXDEdM4hO35MMU=
+			</data>
+			<key>hash2</key>
+			<data>
+			i4BGB/XbA3UD+Pq31aotAvRwLatIk1sjFeQ4zD/2rto=
 			</data>
 		</dict>
 		<key>Modules/SensoroSensorKit.swiftmodule/arm64.swiftdoc</key>
@@ -68,11 +98,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			bia2bopCVTgppcY1IFV06gUfc5w=
+			tpev6i6YYnkoNs8UMnqDoiX41MQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			o7/0ki8d/JuHd8UcTrx1ValkwF+qN6mAB3EeteZd7wc=
+			vcAo6RtHGlSB5k14F+IXdtwBFJpbkLQ5fQB6ofa2QC0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
