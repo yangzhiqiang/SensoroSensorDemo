@@ -30,7 +30,7 @@ class ViewController: UIViewController, UITableViewDataSource, SensoroDeviceMana
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(customView: version);
         
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Stop",
-                                                                style: .Plain,
+                                                                style: .plain,
                                                                 target: self,
                                                                 action: #selector(scanAction));
     }
@@ -54,34 +54,34 @@ class ViewController: UIViewController, UITableViewDataSource, SensoroDeviceMana
 
     // MARK: SensoroDeviceManagerDelegate
     
-    func deviceManager(manager: SensoroDeviceManager, goneDevices devices: [SensoroDevice]) {
+    func deviceManager(_ manager: SensoroDeviceManager, goneDevices devices: [SensoroDevice]) {
         self.devices = manager.devices;
         
         deviceList.reloadData();
     }
     
-    func deviceManager(manager: SensoroDeviceManager, newDevices devices: [SensoroDevice]) {
+    func deviceManager(_ manager: SensoroDeviceManager, newDevices devices: [SensoroDevice]) {
         self.devices = manager.devices;
 
         deviceList.reloadData();
     }
     
-    func deviceManager(manager: SensoroDeviceManager, didRangeDevices devices: [SensoroDevice]) {
+    func deviceManager(_ manager: SensoroDeviceManager, didRangeDevices devices: [SensoroDevice]) {
         
         deviceList.reloadData();
     }
     
     // MARK: UITableViewDataSource
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return devices.count;
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        if let cell = tableView.dequeueReusableCellWithIdentifier("deviceCell") {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "deviceCell") {
             
-            cell.textLabel?.text = devices[indexPath.row].getValue(.Idx_SN).stringValue;
-            cell.detailTextLabel?.text = devices[indexPath.row].getValue(.Idx_RSSI).stringValue;
-            cell.selectionStyle = .None;
+            cell.textLabel?.text = devices[indexPath.row].getValue(.idx_SN).stringValue;
+            cell.detailTextLabel?.text = devices[indexPath.row].getValue(.idx_RSSI).stringValue;
+            cell.selectionStyle = .none;
             
             return cell;
         }else{
@@ -89,10 +89,10 @@ class ViewController: UIViewController, UITableViewDataSource, SensoroDeviceMana
         }
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showDetail" {
             
-            if let controller = segue.destinationViewController as? DeviceDetailViewController {
+            if let controller = segue.destination as? DeviceDetailViewController {
                 if let path = deviceList.indexPathForSelectedRow {
                     controller.device = devices[path.row];
                 }

@@ -14,16 +14,16 @@ class DeviceDetailViewController: UITableViewController {
     var device : SensoroDevice? = nil;
     
     var valuesIdxes : [SensorIndex] = [
-        .Idx_SN,
-        .Idx_RSSI,
-        .Idx_HardwareVer,
-        .Idx_FirmwareVer,
-        .Idx_BatteryLevel,
-        .Idx_Temperature,
-        .Idx_Humidity,
-        .Idx_Light,
-        .Idx_Accelerator,
-        .Idx_Custom
+        .idx_SN,
+        .idx_RSSI,
+        .idx_HardwareVer,
+        .idx_FirmwareVer,
+        .idx_BatteryLevel,
+        .idx_Temperature,
+        .idx_Humidity,
+        .idx_Light,
+        .idx_Accelerator,
+        .idx_Custom
         ];
     
     var valuesDesces : [String] = [
@@ -56,20 +56,20 @@ class DeviceDetailViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
 
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return valuesIdxes.count;
     }
 
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("valueCell", forIndexPath: indexPath)
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "valueCell", for: indexPath)
 
         cell.textLabel?.text = valuesDesces[indexPath.row];
         
-        cell.selectionStyle = .None;
+        cell.selectionStyle = .none;
         if let device = self.device {
             cell.detailTextLabel?.text = device.getValue(valuesIdxes[indexPath.row]).stringValue;
         }
