@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		631DB5111E8A566900A9F584 /* TransparentTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631DB5101E8A566900A9F584 /* TransparentTestViewController.swift */; };
+		631DB5171E8A696D00A9F584 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 631DB5141E8A696D00A9F584 /* SVProgressHUD.bundle */; };
+		631DB5181E8A696D00A9F584 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 631DB5161E8A696D00A9F584 /* SVProgressHUD.m */; };
 		632040A31D1BECFD00F89B1C /* DeviceDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632040A21D1BECFD00F89B1C /* DeviceDetailViewController.swift */; };
 		632040AC1D1BEECE00F89B1C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 632040AB1D1BEECE00F89B1C /* main.m */; };
 		632040AF1D1BEECE00F89B1C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 632040AE1D1BEECE00F89B1C /* AppDelegate.m */; };
@@ -20,6 +23,9 @@
 		632AF18F1D1BE9DF00557B98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 632AF18D1D1BE9DF00557B98 /* Main.storyboard */; };
 		632AF1911D1BE9DF00557B98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 632AF1901D1BE9DF00557B98 /* Assets.xcassets */; };
 		632AF1941D1BE9DF00557B98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 632AF1921D1BE9DF00557B98 /* LaunchScreen.storyboard */; };
+		638641041E8DF4300080B200 /* TransparentTestOCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 638641031E8DF4300080B200 /* TransparentTestOCViewController.m */; };
+		6386410A1E8DFE3F0080B200 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 638641071E8DFE3F0080B200 /* SVProgressHUD.bundle */; };
+		6386410B1E8DFE3F0080B200 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 638641091E8DFE3F0080B200 /* SVProgressHUD.m */; };
 		63BE46E61D1CEDB700C038B1 /* SensoroSensorKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63BE46E41D1CED7200C038B1 /* SensoroSensorKit.framework */; };
 		63BE46E71D1CEDB700C038B1 /* SensoroSensorKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 63BE46E41D1CED7200C038B1 /* SensoroSensorKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		63BE46E81D1CEF1C00C038B1 /* SensoroSensorKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63BE46E41D1CED7200C038B1 /* SensoroSensorKit.framework */; };
@@ -52,6 +58,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		631DB5101E8A566900A9F584 /* TransparentTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransparentTestViewController.swift; sourceTree = "<group>"; };
+		631DB5141E8A696D00A9F584 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		631DB5151E8A696D00A9F584 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		631DB5161E8A696D00A9F584 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		631DB5191E8A69A300A9F584 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
 		632040A21D1BECFD00F89B1C /* DeviceDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceDetailViewController.swift; sourceTree = "<group>"; };
 		632040A81D1BEECE00F89B1C /* SensoroSensorOCDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SensoroSensorOCDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		632040AB1D1BEECE00F89B1C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -72,6 +83,11 @@
 		632AF1901D1BE9DF00557B98 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		632AF1931D1BE9DF00557B98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		632AF1951D1BE9DF00557B98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		638641021E8DF4300080B200 /* TransparentTestOCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransparentTestOCViewController.h; sourceTree = "<group>"; };
+		638641031E8DF4300080B200 /* TransparentTestOCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransparentTestOCViewController.m; sourceTree = "<group>"; };
+		638641071E8DFE3F0080B200 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		638641081E8DFE3F0080B200 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		638641091E8DFE3F0080B200 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
 		63BE46E41D1CED7200C038B1 /* SensoroSensorKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SensoroSensorKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,9 +111,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		631DB5121E8A696D00A9F584 /* thirdparty */ = {
+			isa = PBXGroup;
+			children = (
+				631DB5131E8A696D00A9F584 /* SVProgressHUD */,
+			);
+			path = thirdparty;
+			sourceTree = SOURCE_ROOT;
+		};
+		631DB5131E8A696D00A9F584 /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				631DB5141E8A696D00A9F584 /* SVProgressHUD.bundle */,
+				631DB5151E8A696D00A9F584 /* SVProgressHUD.h */,
+				631DB5161E8A696D00A9F584 /* SVProgressHUD.m */,
+			);
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
 		632040A91D1BEECE00F89B1C /* SensoroSensorOCDemo */ = {
 			isa = PBXGroup;
 			children = (
+				638641051E8DFE3F0080B200 /* thirdparty */,
+				638641021E8DF4300080B200 /* TransparentTestOCViewController.h */,
+				638641031E8DF4300080B200 /* TransparentTestOCViewController.m */,
 				632040BF1D1CD1E900F89B1C /* DeviceDetailTableViewController.h */,
 				632040C01D1CD1E900F89B1C /* DeviceDetailTableViewController.m */,
 				632040AD1D1BEECE00F89B1C /* AppDelegate.h */,
@@ -143,6 +180,8 @@
 		632AF1881D1BE9DF00557B98 /* SensoroSensorDemo */ = {
 			isa = PBXGroup;
 			children = (
+				631DB5121E8A696D00A9F584 /* thirdparty */,
+				631DB5101E8A566900A9F584 /* TransparentTestViewController.swift */,
 				632040A21D1BECFD00F89B1C /* DeviceDetailViewController.swift */,
 				632AF1891D1BE9DF00557B98 /* AppDelegate.swift */,
 				632AF18B1D1BE9DF00557B98 /* ViewController.swift */,
@@ -150,8 +189,27 @@
 				632AF1901D1BE9DF00557B98 /* Assets.xcassets */,
 				632AF1921D1BE9DF00557B98 /* LaunchScreen.storyboard */,
 				632AF1951D1BE9DF00557B98 /* Info.plist */,
+				631DB5191E8A69A300A9F584 /* BridgingHeader.h */,
 			);
 			path = SensoroSensorDemo;
+			sourceTree = "<group>";
+		};
+		638641051E8DFE3F0080B200 /* thirdparty */ = {
+			isa = PBXGroup;
+			children = (
+				638641061E8DFE3F0080B200 /* SVProgressHUD */,
+			);
+			path = thirdparty;
+			sourceTree = SOURCE_ROOT;
+		};
+		638641061E8DFE3F0080B200 /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				638641071E8DFE3F0080B200 /* SVProgressHUD.bundle */,
+				638641081E8DFE3F0080B200 /* SVProgressHUD.h */,
+				638641091E8DFE3F0080B200 /* SVProgressHUD.m */,
+			);
+			path = SVProgressHUD;
 			sourceTree = "<group>";
 		};
 		63BE46E31D1CED7200C038B1 /* Framework */ = {
@@ -249,6 +307,7 @@
 				632040BA1D1BEECE00F89B1C /* LaunchScreen.storyboard in Resources */,
 				632040B71D1BEECE00F89B1C /* Assets.xcassets in Resources */,
 				632040B51D1BEECE00F89B1C /* Main.storyboard in Resources */,
+				6386410A1E8DFE3F0080B200 /* SVProgressHUD.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +318,7 @@
 				632AF1941D1BE9DF00557B98 /* LaunchScreen.storyboard in Resources */,
 				632AF1911D1BE9DF00557B98 /* Assets.xcassets in Resources */,
 				632AF18F1D1BE9DF00557B98 /* Main.storyboard in Resources */,
+				631DB5171E8A696D00A9F584 /* SVProgressHUD.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,10 +329,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				638641041E8DF4300080B200 /* TransparentTestOCViewController.m in Sources */,
 				632040B21D1BEECE00F89B1C /* ViewController.m in Sources */,
 				632040AF1D1BEECE00F89B1C /* AppDelegate.m in Sources */,
 				632040C11D1CD1E900F89B1C /* DeviceDetailTableViewController.m in Sources */,
 				632040AC1D1BEECE00F89B1C /* main.m in Sources */,
+				6386410B1E8DFE3F0080B200 /* SVProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,7 +344,9 @@
 			files = (
 				632AF18C1D1BE9DF00557B98 /* ViewController.swift in Sources */,
 				632AF18A1D1BE9DF00557B98 /* AppDelegate.swift in Sources */,
+				631DB5181E8A696D00A9F584 /* SVProgressHUD.m in Sources */,
 				632040A31D1BECFD00F89B1C /* DeviceDetailViewController.swift in Sources */,
+				631DB5111E8A566900A9F584 /* TransparentTestViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,6 +523,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sensoro.SensoroSensorDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = SensoroSensorDemo/BridgingHeader.h;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -476,6 +541,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sensoro.SensoroSensorDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = SensoroSensorDemo/BridgingHeader.h;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

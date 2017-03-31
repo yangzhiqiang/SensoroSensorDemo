@@ -47,11 +47,26 @@ class DeviceDetailViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         //self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "测试",
+                                                                 style: .plain,
+                                                                 target: self,
+                                                                 action: #selector(transparentTest));
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func transparentTest(){
+        if let storyboard = self.storyboard {
+            if let contrller = storyboard.instantiateViewController(withIdentifier: "transparent") as? TransparentTestViewController {
+                
+                contrller.device = device;
+                self.navigationController?.pushViewController(contrller, animated: true);
+            }
+        }
     }
 
     // MARK: - Table view data source

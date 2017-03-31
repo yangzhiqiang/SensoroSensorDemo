@@ -7,6 +7,7 @@
 //
 
 #import "DeviceDetailTableViewController.h"
+#import "TransparentTestOCViewController.h"
 
 SensorIndex valuesIdxes[10] = {
     SensorIndexIdx_SN,
@@ -55,11 +56,24 @@ NSArray<NSString*> * valuesDesces = nil;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"测试"
+                                                                              style:UIBarButtonItemStylePlain
+                                                                             target:self
+                                                                             action:@selector(transparentTest:)];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void) transparentTest: (id) sender {
+    TransparentTestOCViewController * controller = (TransparentTestOCViewController *)[self.storyboard instantiateViewControllerWithIdentifier:@"transparent"];
+    
+    controller.device = self.device;
+    
+    [self.navigationController pushViewController:controller animated:YES];
 }
 
 #pragma mark - Table view data source
