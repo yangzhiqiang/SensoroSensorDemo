@@ -23,8 +23,19 @@ class DeviceDetailViewController: UITableViewController {
         .idx_Humidity,
         .idx_Light,
         .idx_Accelerator,
-        .idx_Custom
-        ];
+        .idx_Custom,
+        .idx_Leak,
+        .idx_CO,
+        .idx_CO2,
+        .idx_NO2,
+        .idx_CH4,
+        .idx_LPG,
+        .idx_PM1,
+        .idx_PM2_5,
+        .idx_PM10,
+        .idx_Cover,
+        .idx_LiquidLevel
+    ];
     
     var valuesDesces : [String] = [
         "SN",
@@ -36,7 +47,18 @@ class DeviceDetailViewController: UITableViewController {
         "湿度",
         "光线",
         "加速度",
-        "自定义"
+        "自定义",
+        "滴漏",
+        "一氧化碳",
+        "二氧化碳",
+        "二氧化氮",
+        "甲烷",
+        "液化天然气",
+        "PM1",
+        "PM2.5",
+        "PM10",
+        "井盖",
+        "液位"
     ];
     
     override func viewDidLoad() {

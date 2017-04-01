@@ -9,7 +9,7 @@
 #import "DeviceDetailTableViewController.h"
 #import "TransparentTestOCViewController.h"
 
-SensorIndex valuesIdxes[10] = {
+SensorIndex valuesIdxes[21] = {
     SensorIndexIdx_SN,
     SensorIndexIdx_RSSI,
     SensorIndexIdx_HardwareVer,
@@ -20,6 +20,17 @@ SensorIndex valuesIdxes[10] = {
     SensorIndexIdx_Light,
     SensorIndexIdx_Accelerator,
     SensorIndexIdx_Custom,
+    SensorIndexIdx_Leak,
+    SensorIndexIdx_CO,
+    SensorIndexIdx_CO2,
+    SensorIndexIdx_NO2,
+    SensorIndexIdx_CH4,
+    SensorIndexIdx_LPG,
+    SensorIndexIdx_PM1,
+    SensorIndexIdx_PM2_5,
+    SensorIndexIdx_PM10,
+    SensorIndexIdx_Cover,
+    SensorIndexIdx_LiquidLevel
 };
 
 NSArray<NSString*> * valuesDesces = nil;
@@ -47,7 +58,18 @@ NSArray<NSString*> * valuesDesces = nil;
                          @"湿度",
                          @"光线",
                          @"加速度",
-                         @"自定义"
+                         @"自定义",
+                         @"滴漏",
+                         @"一氧化碳",
+                         @"二氧化碳",
+                         @"二氧化氮",
+                         @"甲烷",
+                         @"液化天然气",
+                         @"PM1",
+                         @"PM2.5",
+                         @"PM10",
+                         @"井盖",
+                         @"液位"
                          ];
     }
     
