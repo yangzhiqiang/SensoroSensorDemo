@@ -14,6 +14,8 @@
 @property (weak, nonatomic) IBOutlet UITextField *retValue;
 @property (weak, nonatomic) IBOutlet UITextField *writeValue;
 @property (weak, nonatomic) IBOutlet UIButton *connectBtn;
+@property (weak, nonatomic) IBOutlet UILabel *count;
+@property (weak, nonatomic) IBOutlet UITextView *receivedText;
 
 @end
 
@@ -60,10 +62,16 @@
         if (error != nil ){
             NSLog(@"Error : %@",error);
         }else{
-            NSRange range = NSMakeRange(0, 1);
-            int8_t binValue = 0;
-            [data getBytes:&binValue range:range];
-            _retValue.text = [NSString stringWithFormat:@"%d",binValue];
+            
+            NSString * ret = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+            
+            if (ret != nil ){
+                self.receivedText.text = ret;
+            }else{
+                self.receivedText.text = data.debugDescription;
+            }
+            
+            self.count.text = [NSString stringWithFormat:@"%lu", data.length];
         }
     }];
 }
@@ -83,10 +91,25 @@
             [_device writeWithData:data writeCallback:^(NSError * _Nullable error) {
                 if (error != nil ){
                     NSLog(@"Write Error : %@",error);
+                }else{
+                    NSLog(@"Write is OK");
                 }
             }];
         }
     }
+}
+
+- (IBAction)longerThan20Byte:(id)sender {
+    NSString * writeStr = @"0123456789ABCDE0123456789ABCDE";
+    NSData * data = [writeStr dataUsingEncoding:NSUTF8StringEncoding];
+    
+    [_device writeWithData:data writeCallback:^(NSError * _Nullable error) {
+        if (error != nil ){
+            NSLog(@"Write Error : %@",error);
+        }else{
+            NSLog(@"Write is OK");
+        }
+    }];
 }
 
 /*

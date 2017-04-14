@@ -14,6 +14,8 @@ class TransparentTestViewController: UIViewController {
     @IBOutlet weak var writeValue: UITextField!
     @IBOutlet weak var retValue: UITextField!
     @IBOutlet weak var connectBtn: UIButton!
+    @IBOutlet weak var count: UILabel!
+    @IBOutlet weak var receivedText: UITextView!
 
     var device : SensoroDevice? = nil;
     
@@ -76,10 +78,13 @@ class TransparentTestViewController: UIViewController {
                 print(error.debugDescription);
             }else{
                 if let parent = self {
-                    let range = NSMakeRange(0, 1);
-                    var binValue : Int8 = 0;
-                    data!.getBytes(&binValue, range: range);
-                    parent.retValue.text = String(binValue);
+                    
+                    if let string = String(data: data! as Data, encoding: .utf8) {
+                        parent.receivedText.text = string;
+                    }else{
+                        parent.receivedText.text = data!.debugDescription;
+                    }
+                    self?.count.text = String(data!.length);
                 }
             }
         }
@@ -100,6 +105,25 @@ class TransparentTestViewController: UIViewController {
             device.write(data: value) { (error) in
                 if error != nil {
                     print(error ?? "nil");
+                }else{
+                    print("Write is OK");
+                }
+            }
+        }
+    }
+    
+    @IBAction func longerThan20Byte(_ sender: Any) {
+        
+        guard let device = self.device, device.isConnected else {
+            return;
+        }
+        
+        if let value = "0123456789ABCDE0123456789ABCDE".data(using: .utf8) {
+            device.write(data: value) { (error) in
+                if error != nil {
+                    print(error ?? "nil");
+                }else{
+                    print("Write is OK");
                 }
             }
         }

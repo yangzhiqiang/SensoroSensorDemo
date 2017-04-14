@@ -8,9 +8,11 @@ This demo show how to use Sensoro sensor SDK. There are two "Target" es in proje
 
 ###Change List:
 
-### 2017-03-28
-Add function that user can write data by sdk through chip to custom device. or get data from custom data through chip.
+### 2017-04-14
+Support longer than 20 bytes in "Transfer" function
 
 ### 2017-03-30
-
 Support some sensor
+
+### 2017-03-28
+Add "transfer" function that user can write data by sdk through chip to custom device. or get data from custom data through chip.
