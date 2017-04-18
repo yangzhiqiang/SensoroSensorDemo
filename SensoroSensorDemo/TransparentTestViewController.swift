@@ -61,7 +61,8 @@ class TransparentTestViewController: UIViewController {
         
         SVProgressHUD.showProgress(-1, status: "连接中 ...");
         
-        device.startSession(completion: { [weak self](error) in
+        //把"xxxx"改为实际的设备用密码
+        device.startSession(password: "xxxx", completion: { [weak self](error) in
             if error != nil {
                 SVProgressHUD.showError(withStatus: "连接失败");
                 print(error.debugDescription);

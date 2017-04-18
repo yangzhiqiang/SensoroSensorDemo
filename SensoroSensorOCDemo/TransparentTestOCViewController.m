@@ -50,8 +50,8 @@
     }
     
     [SVProgressHUD showProgress:-1 status:@"连接中 ..."];
-    
-    [_device startSessionWithCompletion:^(NSError * _Nullable error) {
+    //修改xxxx为相应的设备密码
+    [_device startSessionWithPassword: @"xxxx" completion:^(NSError * _Nullable error) {
         if (error != nil) {
             [SVProgressHUD showErrorWithStatus:@"连接失败"];
         }else{

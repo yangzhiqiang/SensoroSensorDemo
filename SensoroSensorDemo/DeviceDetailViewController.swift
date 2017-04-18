@@ -12,6 +12,7 @@ import SensoroSensorKit
 class DeviceDetailViewController: UITableViewController {
 
     var device : SensoroDevice? = nil;
+    var timerForUpdate : Timer! = nil;
     
     var valuesIdxes : [SensorIndex] = [
         .idx_SN,
@@ -74,11 +75,21 @@ class DeviceDetailViewController: UITableViewController {
                                                                  style: .plain,
                                                                  target: self,
                                                                  action: #selector(transparentTest));
+        
+        self.timerForUpdate = Timer.scheduledTimer(timeInterval: 1,
+                                                   target: self,
+                                                   selector: #selector(updateContent(timer:)),
+                                                   userInfo: nil,
+                                                   repeats: true);
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func updateContent(timer : Timer){
+        tableView.reloadData();
     }
     
     func transparentTest(){

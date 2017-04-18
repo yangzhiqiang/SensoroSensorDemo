@@ -237,7 +237,7 @@ SWIFT_CLASS("_TtC16SensoroSensorKit13SensoroDevice")
 ///   </li>
 /// </ul>
 @property (nonatomic, readonly) BOOL isConnected;
-- (void)startSessionWithCompletion:(void (^ _Nonnull)(NSError * _Nullable))completion notify:(void (^ _Nonnull)(NSData * _Nullable, NSError * _Nullable))notify;
+- (void)startSessionWithPassword:(NSString * _Nonnull)password completion:(void (^ _Nonnull)(NSError * _Nullable))completion notify:(void (^ _Nonnull)(NSData * _Nullable, NSError * _Nullable))notify;
 - (void)stopSession;
 - (void)writeWithData:(NSData * _Nonnull)data writeCallback:(void (^ _Nonnull)(NSError * _Nullable))writeCallback;
 @end
