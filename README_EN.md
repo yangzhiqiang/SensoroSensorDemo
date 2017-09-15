@@ -8,6 +8,9 @@ This demo show how to use Sensoro sensor SDK. There are two "Target" es in proje
 
 ###Change List:
 
+### 2017-09-15
+Add support for flame and artificial gas sensor.
+
 ### 2017-04-18 
 Add password authorization in "Transfer" function
 

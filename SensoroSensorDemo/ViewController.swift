@@ -35,7 +35,7 @@ class ViewController: UIViewController, UITableViewDataSource, SensoroDeviceMana
                                                                 action: #selector(scanAction));
     }
     
-    func scanAction(){
+    @objc func scanAction(){
         if started == true {
             SensoroDeviceManager.sharedInstance.stopScan();
             self.navigationItem.leftBarButtonItem?.title = "Start";
@@ -56,6 +56,9 @@ class ViewController: UIViewController, UITableViewDataSource, SensoroDeviceMana
     
     func deviceManager(_ manager: SensoroDeviceManager, goneDevices devices: [SensoroDevice]) {
         self.devices = manager.devices;
+        
+        
+        
         
         deviceList.reloadData();
     }

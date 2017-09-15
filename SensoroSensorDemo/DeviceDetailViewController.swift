@@ -88,11 +88,11 @@ class DeviceDetailViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func updateContent(timer : Timer){
+    @objc func updateContent(timer : Timer){
         tableView.reloadData();
     }
     
-    func transparentTest(){
+    @objc func transparentTest(){
         if let storyboard = self.storyboard {
             if let contrller = storyboard.instantiateViewController(withIdentifier: "transparent") as? TransparentTestViewController {
                 
