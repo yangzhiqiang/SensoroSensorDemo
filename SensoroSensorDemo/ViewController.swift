@@ -80,10 +80,9 @@ class ViewController: UIViewController, UITableViewDataSource, SensoroDeviceMana
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let cell = tableView.dequeueReusableCell(withIdentifier: "deviceCell") {
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "deviceCell") as? SensorCell {
             
-            cell.textLabel?.text = devices[indexPath.row].getValue(.idx_SN).stringValue;
-            cell.detailTextLabel?.text = devices[indexPath.row].getValue(.idx_RSSI).stringValue;
+            cell.updateContent(device: devices[indexPath.row]);
             cell.selectionStyle = .none;
             
             return cell;
@@ -94,7 +93,6 @@ class ViewController: UIViewController, UITableViewDataSource, SensoroDeviceMana
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showDetail" {
-            
             if let controller = segue.destination as? DeviceDetailViewController {
                 if let path = deviceList.indexPathForSelectedRow {
                     controller.device = devices[path.row];

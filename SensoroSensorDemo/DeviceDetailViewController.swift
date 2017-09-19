@@ -35,7 +35,18 @@ class DeviceDetailViewController: UITableViewController {
         .idx_PM2_5,
         .idx_PM10,
         .idx_Cover,
-        .idx_LiquidLevel
+        .idx_LiquidLevel,
+        .idx_SO2,
+        .idx_NH3,
+        .idx_TVOC,
+        .idx_Smoke,
+        .idx_O3,
+        .idx_Angle,
+        .idx_Pitch,
+        .idx_Roll,
+        .idx_Yaw,
+        .idx_Flame,
+        .idx_Artificial_Gas,
     ];
     
     var valuesDesces : [String] = [
@@ -59,7 +70,18 @@ class DeviceDetailViewController: UITableViewController {
         "PM2.5",
         "PM10",
         "井盖",
-        "液位"
+        "液位",
+        "SO2",
+        "NH3",
+        "TVOC",
+        "烟雾",
+        "O3",
+        "角度",
+        "俯仰角",
+        "横滚角",
+        "偏航角",
+        "火焰",
+        "人工煤气"
     ];
     
     override func viewDidLoad() {

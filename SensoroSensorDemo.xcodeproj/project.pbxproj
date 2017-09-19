@@ -30,6 +30,7 @@
 		63BE46E71D1CEDB700C038B1 /* SensoroSensorKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 63BE46E41D1CED7200C038B1 /* SensoroSensorKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		63BE46E81D1CEF1C00C038B1 /* SensoroSensorKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63BE46E41D1CED7200C038B1 /* SensoroSensorKit.framework */; };
 		63BE46E91D1CEF1C00C038B1 /* SensoroSensorKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 63BE46E41D1CED7200C038B1 /* SensoroSensorKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		63F9537A1F6F9E0F00C79614 /* SensorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F953791F6F9E0F00C79614 /* SensorCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -89,6 +90,7 @@
 		638641081E8DFE3F0080B200 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
 		638641091E8DFE3F0080B200 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
 		63BE46E41D1CED7200C038B1 /* SensoroSensorKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SensoroSensorKit.framework; sourceTree = "<group>"; };
+		63F953791F6F9E0F00C79614 /* SensorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +192,7 @@
 				632AF1921D1BE9DF00557B98 /* LaunchScreen.storyboard */,
 				632AF1951D1BE9DF00557B98 /* Info.plist */,
 				631DB5191E8A69A300A9F584 /* BridgingHeader.h */,
+				63F953791F6F9E0F00C79614 /* SensorCell.swift */,
 			);
 			path = SensoroSensorDemo;
 			sourceTree = "<group>";
@@ -347,6 +350,7 @@
 				631DB5181E8A696D00A9F584 /* SVProgressHUD.m in Sources */,
 				632040A31D1BECFD00F89B1C /* DeviceDetailViewController.swift in Sources */,
 				631DB5111E8A566900A9F584 /* TransparentTestViewController.swift in Sources */,
+				63F9537A1F6F9E0F00C79614 /* SensorCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
