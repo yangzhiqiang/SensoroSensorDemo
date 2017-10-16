@@ -8,6 +8,9 @@ This demo show how to use Sensoro sensor SDK. There are two "Target" es in proje
 
 ###Change List:
 
+#### 2017-10-16
+Suport Xcode 9 and swift 4.0.
+
 ### 2017-09-15
 Add support for flame and artificial gas sensor.
 
