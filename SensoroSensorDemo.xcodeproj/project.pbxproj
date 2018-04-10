@@ -26,6 +26,14 @@
 		638641041E8DF4300080B200 /* TransparentTestOCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 638641031E8DF4300080B200 /* TransparentTestOCViewController.m */; };
 		6386410A1E8DFE3F0080B200 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 638641071E8DFE3F0080B200 /* SVProgressHUD.bundle */; };
 		6386410B1E8DFE3F0080B200 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 638641091E8DFE3F0080B200 /* SVProgressHUD.m */; };
+		639ED4CC207C8DBF00053D03 /* DFULibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 639ED4C9207C8D6800053D03 /* DFULibrary.framework */; };
+		639ED4CE207C8DBF00053D03 /* SwiftProtobuf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 639ED4C8207C8D6700053D03 /* SwiftProtobuf.framework */; };
+		639ED4DA207C8F2400053D03 /* DFULibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 639ED4C9207C8D6800053D03 /* DFULibrary.framework */; };
+		639ED4DB207C8F2400053D03 /* DFULibrary.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 639ED4C9207C8D6800053D03 /* DFULibrary.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		639ED4DC207C8F2400053D03 /* SwiftProtobuf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 639ED4C8207C8D6700053D03 /* SwiftProtobuf.framework */; };
+		639ED4DD207C8F2400053D03 /* SwiftProtobuf.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 639ED4C8207C8D6700053D03 /* SwiftProtobuf.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		639ED4DF207C8F5700053D03 /* DFULibrary.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 639ED4C9207C8D6800053D03 /* DFULibrary.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		639ED4E1207C8F5700053D03 /* SwiftProtobuf.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 639ED4C8207C8D6700053D03 /* SwiftProtobuf.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		63BE46E61D1CEDB700C038B1 /* SensoroSensorKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63BE46E41D1CED7200C038B1 /* SensoroSensorKit.framework */; };
 		63BE46E71D1CEDB700C038B1 /* SensoroSensorKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 63BE46E41D1CED7200C038B1 /* SensoroSensorKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		63BE46E81D1CEF1C00C038B1 /* SensoroSensorKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63BE46E41D1CED7200C038B1 /* SensoroSensorKit.framework */; };
@@ -40,6 +48,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				639ED4DB207C8F2400053D03 /* DFULibrary.framework in Embed Frameworks */,
+				639ED4DD207C8F2400053D03 /* SwiftProtobuf.framework in Embed Frameworks */,
 				63BE46E71D1CEDB700C038B1 /* SensoroSensorKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -51,6 +61,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				639ED4DF207C8F5700053D03 /* DFULibrary.framework in Embed Frameworks */,
+				639ED4E1207C8F5700053D03 /* SwiftProtobuf.framework in Embed Frameworks */,
 				63BE46E91D1CEF1C00C038B1 /* SensoroSensorKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -89,6 +101,8 @@
 		638641071E8DFE3F0080B200 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
 		638641081E8DFE3F0080B200 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
 		638641091E8DFE3F0080B200 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		639ED4C8207C8D6700053D03 /* SwiftProtobuf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SwiftProtobuf.framework; sourceTree = "<group>"; };
+		639ED4C9207C8D6800053D03 /* DFULibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DFULibrary.framework; sourceTree = "<group>"; };
 		63BE46E41D1CED7200C038B1 /* SensoroSensorKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SensoroSensorKit.framework; sourceTree = "<group>"; };
 		63F953791F6F9E0F00C79614 /* SensorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -98,6 +112,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				639ED4DA207C8F2400053D03 /* DFULibrary.framework in Frameworks */,
+				639ED4DC207C8F2400053D03 /* SwiftProtobuf.framework in Frameworks */,
 				63BE46E61D1CEDB700C038B1 /* SensoroSensorKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -106,6 +122,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				639ED4CC207C8DBF00053D03 /* DFULibrary.framework in Frameworks */,
+				639ED4CE207C8DBF00053D03 /* SwiftProtobuf.framework in Frameworks */,
 				63BE46E81D1CEF1C00C038B1 /* SensoroSensorKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -218,6 +236,8 @@
 		63BE46E31D1CED7200C038B1 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
+				639ED4C9207C8D6800053D03 /* DFULibrary.framework */,
+				639ED4C8207C8D6700053D03 /* SwiftProtobuf.framework */,
 				63BE46E41D1CED7200C038B1 /* SensoroSensorKit.framework */,
 			);
 			path = Framework;
@@ -269,7 +289,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = Sensoro;
 				TargetAttributes = {
 					632040A71D1BEECE00F89B1C = {
@@ -439,12 +459,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -492,12 +514,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
