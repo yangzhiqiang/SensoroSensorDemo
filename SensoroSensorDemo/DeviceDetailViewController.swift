@@ -115,13 +115,44 @@ class DeviceDetailViewController: UITableViewController {
     }
     
     @objc func transparentTest(){
-        if let storyboard = self.storyboard {
-            if let contrller = storyboard.instantiateViewController(withIdentifier: "transparent") as? TransparentTestViewController {
-                
-                contrller.device = device;
-                self.navigationController?.pushViewController(contrller, animated: true);
-            }
-        }
+
+        let alert = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet);
+        alert.loadViewIfNeeded();
+        
+        let transparent = UIAlertAction(title : "透传测试",
+                                        style : .default,
+                                        handler:{ action in
+                                            if let storyboard = self.storyboard {
+                                                if let contrller = storyboard.instantiateViewController(withIdentifier: "transparent") as? TransparentTestViewController {
+                                                    
+                                                    contrller.device = self.device;
+                                                    self.navigationController?.pushViewController(contrller, animated: true);
+                                                }
+                                            }
+        });
+        alert.addAction(transparent);
+        
+        let upgrade = UIAlertAction(title : "升级测试",
+                                    style : .default,
+                                    handler:{ action in
+                                        if let storyboard = self.storyboard {
+                                            if let contrller = storyboard.instantiateViewController(withIdentifier: "upgrade") as? UpgradeDeviceController {
+                                                
+                                                contrller.device = self.device;
+                                                self.navigationController?.pushViewController(contrller, animated: true);
+                                            }
+                                        }
+        });
+        alert.addAction(upgrade);
+        
+        let cancel = UIAlertAction(title : "取消",
+                                   style : .default,
+                                   handler:{ action in
+                                    alert.dismiss(animated: true, completion: nil);
+        });
+        alert.addAction(cancel);
+        
+        self.present(alert,animated:true,completion:nil);
     }
 
     // MARK: - Table view data source

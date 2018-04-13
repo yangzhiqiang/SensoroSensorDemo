@@ -8,6 +8,7 @@
 
 #import "DeviceDetailTableViewController.h"
 #import "TransparentTestOCViewController.h"
+#import "UpgradeDeviceController.h"
 
 SensorIndex valuesIdxes[21] = {
     SensorIndexIdx_SN,
@@ -91,11 +92,33 @@ NSArray<NSString*> * valuesDesces = nil;
 }
 
 - (void) transparentTest: (id) sender {
-    TransparentTestOCViewController * controller = (TransparentTestOCViewController *)[self.storyboard instantiateViewControllerWithIdentifier:@"transparent"];
     
-    controller.device = self.device;
+    UIAlertController * alertSheet = [[UIAlertController alloc] initWithNibName:nil bundle:nil];
     
-    [self.navigationController pushViewController:controller animated:YES];
+    UIAlertAction * transparent = [UIAlertAction actionWithTitle:@"透传测试" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        TransparentTestOCViewController * controller = (TransparentTestOCViewController *)[self.storyboard instantiateViewControllerWithIdentifier:@"transparent"];
+        
+        controller.device = self.device;
+        
+        [self.navigationController pushViewController:controller animated:YES];
+    }];
+    [alertSheet addAction:transparent];
+    
+    UIAlertAction * upgrade = [UIAlertAction actionWithTitle:@"升级测试" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        UpgradeDeviceController * controller = (UpgradeDeviceController *) [self.storyboard instantiateViewControllerWithIdentifier:@"upgrade"];
+        
+        controller.device = self.device;
+        
+        [self.navigationController pushViewController:controller animated:YES];
+    }];
+    [alertSheet addAction:upgrade];
+
+    UIAlertAction * cancel = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        [alertSheet dismissViewControllerAnimated:YES completion:nil];
+    }];
+    [alertSheet addAction:cancel];
+
+    [self presentViewController:alertSheet animated:YES completion:nil];
 }
 
 #pragma mark - Table view data source

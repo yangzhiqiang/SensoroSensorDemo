@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="YsT-3y-O83">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="YsT-3y-O83">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -117,7 +117,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qKB-vN-nOX">
-                                            <rect key="frame" x="316" y="12" width="44" height="20.5"/>
+                                            <rect key="frame" x="315" y="12" width="44" height="20.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -281,6 +281,60 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lRO-fy-pCY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2718" y="-376"/>
+        </scene>
+        <!--Upgrade Device Controller-->
+        <scene sceneID="8ec-Dd-YCI">
+            <objects>
+                <viewController storyboardIdentifier="upgrade" id="xvA-es-Ta4" customClass="UpgradeDeviceController" customModule="SensoroSensorKitTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="72O-Us-Cak"/>
+                        <viewControllerLayoutGuide type="bottom" id="yhV-Ah-WpZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Uye-h2-nK2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jod-Mz-Hq5">
+                                <rect key="frame" x="87.5" y="131" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="DC0-O9-nsH"/>
+                                </constraints>
+                                <state key="normal" title="升级"/>
+                                <connections>
+                                    <action selector="upgradeDevice:" destination="xvA-es-Ta4" eventType="touchUpInside" id="C8D-ew-pXs"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="进度" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g34-OB-BFt">
+                                <rect key="frame" x="170" y="261" width="35" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="状态" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tjF-cd-NsZ">
+                                <rect key="frame" x="170" y="382" width="35" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="g34-OB-BFt" firstAttribute="top" secondItem="jod-Mz-Hq5" secondAttribute="bottom" constant="100" id="CF6-SL-uBV"/>
+                            <constraint firstItem="tjF-cd-NsZ" firstAttribute="top" secondItem="g34-OB-BFt" secondAttribute="bottom" constant="100" id="DQK-V0-h5h"/>
+                            <constraint firstItem="g34-OB-BFt" firstAttribute="centerX" secondItem="Uye-h2-nK2" secondAttribute="centerX" id="EwT-PF-D1r"/>
+                            <constraint firstItem="jod-Mz-Hq5" firstAttribute="top" secondItem="72O-Us-Cak" secondAttribute="bottom" constant="111" id="G9Q-Gh-MhL"/>
+                            <constraint firstItem="tjF-cd-NsZ" firstAttribute="centerX" secondItem="Uye-h2-nK2" secondAttribute="centerX" id="e5e-yx-WpS"/>
+                            <constraint firstItem="jod-Mz-Hq5" firstAttribute="centerX" secondItem="Uye-h2-nK2" secondAttribute="centerX" id="hp8-3e-Px5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="progressLabel" destination="g34-OB-BFt" id="W4o-ki-aFz"/>
+                        <outlet property="statusLabel" destination="tjF-cd-NsZ" id="wQy-Ti-WJK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8fa-qO-PxS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2718" y="357"/>
         </scene>
     </scenes>
 </document>

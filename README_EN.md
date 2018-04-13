@@ -8,6 +8,14 @@ This demo show how to use Sensoro sensor SDK. There are two "Target" es in proje
 
 ###Change List:
 
+#### 2018-04-13
+**版本1.3.1**
+
+1. Support XCode 9.3 and Swift 4.1.
+2. Support upgrade the device by OTA, you need to provide firmware and password of device.
+3. Support Artificial Gas and pressure sensor.
+
+
 #### 2017-10-16
 Suport Xcode 9 and swift 4.0.
 

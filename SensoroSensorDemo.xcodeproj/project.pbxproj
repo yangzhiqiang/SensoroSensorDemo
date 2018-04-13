@@ -34,6 +34,10 @@
 		639ED4DD207C8F2400053D03 /* SwiftProtobuf.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 639ED4C8207C8D6700053D03 /* SwiftProtobuf.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		639ED4DF207C8F5700053D03 /* DFULibrary.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 639ED4C9207C8D6800053D03 /* DFULibrary.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		639ED4E1207C8F5700053D03 /* SwiftProtobuf.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 639ED4C8207C8D6700053D03 /* SwiftProtobuf.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		639ED4F5207F021000053D03 /* UpgradeDeviceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639ED4F4207F020F00053D03 /* UpgradeDeviceController.swift */; };
+		639ED4F8207F057E00053D03 /* UpgradeDeviceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 639ED4F7207F057E00053D03 /* UpgradeDeviceController.m */; };
+		639ED508207F121F00053D03 /* firmware in Resources */ = {isa = PBXBuildFile; fileRef = 639ED507207F121F00053D03 /* firmware */; };
+		639ED52E207F56AE00053D03 /* firmware in Resources */ = {isa = PBXBuildFile; fileRef = 639ED52D207F56AD00053D03 /* firmware */; };
 		63BE46E61D1CEDB700C038B1 /* SensoroSensorKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63BE46E41D1CED7200C038B1 /* SensoroSensorKit.framework */; };
 		63BE46E71D1CEDB700C038B1 /* SensoroSensorKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 63BE46E41D1CED7200C038B1 /* SensoroSensorKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		63BE46E81D1CEF1C00C038B1 /* SensoroSensorKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63BE46E41D1CED7200C038B1 /* SensoroSensorKit.framework */; };
@@ -103,6 +107,11 @@
 		638641091E8DFE3F0080B200 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
 		639ED4C8207C8D6700053D03 /* SwiftProtobuf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SwiftProtobuf.framework; sourceTree = "<group>"; };
 		639ED4C9207C8D6800053D03 /* DFULibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DFULibrary.framework; sourceTree = "<group>"; };
+		639ED4F4207F020F00053D03 /* UpgradeDeviceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpgradeDeviceController.swift; sourceTree = "<group>"; };
+		639ED4F6207F057E00053D03 /* UpgradeDeviceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UpgradeDeviceController.h; sourceTree = "<group>"; };
+		639ED4F7207F057E00053D03 /* UpgradeDeviceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UpgradeDeviceController.m; sourceTree = "<group>"; };
+		639ED507207F121F00053D03 /* firmware */ = {isa = PBXFileReference; lastKnownFileType = folder; name = firmware; path = ../../firmware; sourceTree = "<group>"; };
+		639ED52D207F56AD00053D03 /* firmware */ = {isa = PBXFileReference; lastKnownFileType = folder; name = firmware; path = ../../firmware; sourceTree = "<group>"; };
 		63BE46E41D1CED7200C038B1 /* SensoroSensorKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SensoroSensorKit.framework; sourceTree = "<group>"; };
 		63F953791F6F9E0F00C79614 /* SensorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -152,6 +161,7 @@
 		632040A91D1BEECE00F89B1C /* SensoroSensorOCDemo */ = {
 			isa = PBXGroup;
 			children = (
+				639ED52D207F56AD00053D03 /* firmware */,
 				638641051E8DFE3F0080B200 /* thirdparty */,
 				638641021E8DF4300080B200 /* TransparentTestOCViewController.h */,
 				638641031E8DF4300080B200 /* TransparentTestOCViewController.m */,
@@ -166,6 +176,8 @@
 				632040B81D1BEECE00F89B1C /* LaunchScreen.storyboard */,
 				632040BB1D1BEECE00F89B1C /* Info.plist */,
 				632040AA1D1BEECE00F89B1C /* Supporting Files */,
+				639ED4F6207F057E00053D03 /* UpgradeDeviceController.h */,
+				639ED4F7207F057E00053D03 /* UpgradeDeviceController.m */,
 			);
 			path = SensoroSensorOCDemo;
 			sourceTree = "<group>";
@@ -200,6 +212,8 @@
 		632AF1881D1BE9DF00557B98 /* SensoroSensorDemo */ = {
 			isa = PBXGroup;
 			children = (
+				639ED507207F121F00053D03 /* firmware */,
+				639ED4F4207F020F00053D03 /* UpgradeDeviceController.swift */,
 				631DB5121E8A696D00A9F584 /* thirdparty */,
 				631DB5101E8A566900A9F584 /* TransparentTestViewController.swift */,
 				632040A21D1BECFD00F89B1C /* DeviceDetailViewController.swift */,
@@ -328,6 +342,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				632040BA1D1BEECE00F89B1C /* LaunchScreen.storyboard in Resources */,
+				639ED52E207F56AE00053D03 /* firmware in Resources */,
 				632040B71D1BEECE00F89B1C /* Assets.xcassets in Resources */,
 				632040B51D1BEECE00F89B1C /* Main.storyboard in Resources */,
 				6386410A1E8DFE3F0080B200 /* SVProgressHUD.bundle in Resources */,
@@ -339,6 +354,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				632AF1941D1BE9DF00557B98 /* LaunchScreen.storyboard in Resources */,
+				639ED508207F121F00053D03 /* firmware in Resources */,
 				632AF1911D1BE9DF00557B98 /* Assets.xcassets in Resources */,
 				632AF18F1D1BE9DF00557B98 /* Main.storyboard in Resources */,
 				631DB5171E8A696D00A9F584 /* SVProgressHUD.bundle in Resources */,
@@ -352,6 +368,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				639ED4F8207F057E00053D03 /* UpgradeDeviceController.m in Sources */,
 				638641041E8DF4300080B200 /* TransparentTestOCViewController.m in Sources */,
 				632040B21D1BEECE00F89B1C /* ViewController.m in Sources */,
 				632040AF1D1BEECE00F89B1C /* AppDelegate.m in Sources */,
@@ -371,6 +388,7 @@
 				632040A31D1BECFD00F89B1C /* DeviceDetailViewController.swift in Sources */,
 				631DB5111E8A566900A9F584 /* TransparentTestViewController.swift in Sources */,
 				63F9537A1F6F9E0F00C79614 /* SensorCell.swift in Sources */,
+				639ED4F5207F021000053D03 /* UpgradeDeviceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
