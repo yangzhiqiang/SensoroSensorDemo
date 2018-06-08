@@ -26,7 +26,11 @@ class ViewController: UIViewController, UITableViewDataSource, SensoroDeviceMana
         let frame = CGRect(x: 0, y: 0, width: 44, height: 44);//CGRectMake(0, 0, 44, 44);
         let version = UILabel(frame: frame);
         
-        version.text =  String(format: "%.2f", SensoroSensorKitVersionNumber);
+//        SensoroSensorKitVersionString
+        let bundle = Bundle(identifier: "com.sensoro.SensoroSensorKit")! // Get a reference to the bundle from your framework (not the bundle of the app itself!)
+        let build = bundle.infoDictionary![kCFBundleVersionKey as String] as! String // Get the build from the framework's bundle as a String
+        
+        version.text =  String(format: "%@", build);
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(customView: version);
         
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Stop",

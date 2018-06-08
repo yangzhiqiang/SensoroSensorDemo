@@ -7,6 +7,10 @@ This demo show how to use Sensoro sensor SDK. There are two "Target" es in proje
 **Note** : For Objective - C project. Because the SDK implement in swift language, so you have to change `Build Setting` -> `Embedded Content Contains Swift Code` to `YES`.
 
 ###Change List:
+#### 2018-06-08
+**版本1.3.2**
+
+1. Provide peripheral property of SensoroDevice, you could use it to connect the device by iOS Core Bluetooth framework.
 
 #### 2018-04-13
 **版本1.3.1**

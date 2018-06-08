@@ -96,7 +96,7 @@ class TransparentTestViewController: UIViewController {
         guard let device = self.device, device.isConnected else {
             return;
         }
-        
+        self.view.endEditing(true);
         if var valueInt = Int8(self.writeValue.text ?? "") {
             
             var value = Data();
