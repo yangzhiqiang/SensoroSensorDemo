@@ -60,15 +60,27 @@ class ViewController: UIViewController, UITableViewDataSource, SensoroDeviceMana
     
     func deviceManager(_ manager: SensoroDeviceManager, goneDevices devices: [SensoroDevice]) {
         self.devices = manager.devices;
-        
-        
-        
+
+//        self.devices.removeAll();
+//        for device in manager.devices {
+//            let sn = device.getValue(.idx_SN).stringValue
+//            if sn.hasSuffix("90966") {
+//                    self.devices.append(device);
+//            }
+//        }
         
         deviceList.reloadData();
     }
     
     func deviceManager(_ manager: SensoroDeviceManager, newDevices devices: [SensoroDevice]) {
         self.devices = manager.devices;
+//        self.devices.removeAll();
+//        for device in manager.devices {
+//            let sn = device.getValue(.idx_SN).stringValue
+//            if sn.hasSuffix("90966") {
+//                self.devices.append(device);
+//            }
+//        }
 
         deviceList.reloadData();
     }

@@ -40,12 +40,13 @@ class UpgradeDeviceController: UIViewController {
     @IBAction func upgradeDevice(_ sender: Any) {
 
         //获取指定的DFU固件
-        if let firmwarePath = Bundle.main.path(forResource: "tracker_dfu_test", ofType: "zip", inDirectory: "firmware") {
-            
+//        if let firmwarePath = Bundle.main.path(forResource: "tracker_dfu_test", ofType: "zip", inDirectory: "firmware") {
+        if let firmwarePath = Bundle.main.path(forResource: "SENSORO_TK_DFU_V1.0.1_20180611", ofType: "zip", inDirectory: "firmware") {
+
             print(firmwarePath);
 
             //调用函数进行升级。
-            device?.upgrade(password: "", firmware: firmwarePath, progressWatcher: { (progress) in
+            device?.upgrade(password: "eb]J9{;dxw6MvI-i", firmware: firmwarePath, progressWatcher: { (progress) in
                 //指示固件传输进度。
                 self.progressLabel.text = String(format : "%.1f%%",progress);
             }, stateWatcher: { (state, error) in
@@ -69,6 +70,8 @@ class UpgradeDeviceController: UIViewController {
                         tip = "更新超时";
                     case .failed:
                         tip = "更新失败";
+                    case .recall:
+                        tip = "多次调用";
                     }
                     self.statusLabel.text = tip;
                     print(tip);

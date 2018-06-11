@@ -191,6 +191,7 @@ typedef SWIFT_ENUM(NSInteger, DeviceUpgradeStatus) {
   DeviceUpgradeStatusTimeout = 5,
   DeviceUpgradeStatusCompleted = 6,
   DeviceUpgradeStatusFailed = 7,
+  DeviceUpgradeStatusRecall = 8,
 };
 
 /// the index to get value from SensoroDevice
