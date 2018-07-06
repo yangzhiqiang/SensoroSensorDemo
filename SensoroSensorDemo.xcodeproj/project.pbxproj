@@ -23,6 +23,7 @@
 		632AF18F1D1BE9DF00557B98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 632AF18D1D1BE9DF00557B98 /* Main.storyboard */; };
 		632AF1911D1BE9DF00557B98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 632AF1901D1BE9DF00557B98 /* Assets.xcassets */; };
 		632AF1941D1BE9DF00557B98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 632AF1921D1BE9DF00557B98 /* LaunchScreen.storyboard */; };
+		633944F420EF156500A46D7D /* ExternalConnectTestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633944F320EF156500A46D7D /* ExternalConnectTestController.swift */; };
 		638641041E8DF4300080B200 /* TransparentTestOCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 638641031E8DF4300080B200 /* TransparentTestOCViewController.m */; };
 		6386410A1E8DFE3F0080B200 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 638641071E8DFE3F0080B200 /* SVProgressHUD.bundle */; };
 		6386410B1E8DFE3F0080B200 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 638641091E8DFE3F0080B200 /* SVProgressHUD.m */; };
@@ -100,6 +101,7 @@
 		632AF1901D1BE9DF00557B98 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		632AF1931D1BE9DF00557B98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		632AF1951D1BE9DF00557B98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		633944F320EF156500A46D7D /* ExternalConnectTestController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExternalConnectTestController.swift; sourceTree = "<group>"; };
 		638641021E8DF4300080B200 /* TransparentTestOCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransparentTestOCViewController.h; sourceTree = "<group>"; };
 		638641031E8DF4300080B200 /* TransparentTestOCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransparentTestOCViewController.m; sourceTree = "<group>"; };
 		638641071E8DFE3F0080B200 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
@@ -225,6 +227,7 @@
 				632AF1951D1BE9DF00557B98 /* Info.plist */,
 				631DB5191E8A69A300A9F584 /* BridgingHeader.h */,
 				63F953791F6F9E0F00C79614 /* SensorCell.swift */,
+				633944F320EF156500A46D7D /* ExternalConnectTestController.swift */,
 			);
 			path = SensoroSensorDemo;
 			sourceTree = "<group>";
@@ -389,6 +392,7 @@
 				631DB5111E8A566900A9F584 /* TransparentTestViewController.swift in Sources */,
 				63F9537A1F6F9E0F00C79614 /* SensorCell.swift in Sources */,
 				639ED4F5207F021000053D03 /* UpgradeDeviceController.swift in Sources */,
+				633944F420EF156500A46D7D /* ExternalConnectTestController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

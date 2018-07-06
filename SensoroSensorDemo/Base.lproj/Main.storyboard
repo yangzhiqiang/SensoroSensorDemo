@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="YsT-3y-O83">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="YsT-3y-O83">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -282,10 +282,59 @@
             </objects>
             <point key="canvasLocation" x="2718" y="-376"/>
         </scene>
+        <!--External Connect Test Controller-->
+        <scene sceneID="fid-QX-sMu">
+            <objects>
+                <viewController storyboardIdentifier="externalConnect" id="y3o-eF-Lbi" customClass="ExternalConnectTestController" customModule="SensoroSensorDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tfj-9m-Qb3"/>
+                        <viewControllerLayoutGuide type="bottom" id="rCj-lD-5LJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Vm7-GK-aQy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5gd-ri-QK9">
+                                <rect key="frame" x="112" y="158" width="150" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="6g4-D7-Ae7"/>
+                                </constraints>
+                                <state key="normal" title="Test connect"/>
+                                <connections>
+                                    <action selector="connectDevice:" destination="y3o-eF-Lbi" eventType="touchUpInside" id="e1o-Vd-Bj4"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Pj0-Fz-QJY">
+                                <rect key="frame" x="67.5" y="268" width="240" height="299"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="doZ-WF-OiR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="rCj-lD-5LJ" firstAttribute="top" secondItem="Pj0-Fz-QJY" secondAttribute="bottom" constant="100" id="J4Q-nC-fwe"/>
+                            <constraint firstItem="5gd-ri-QK9" firstAttribute="top" secondItem="tfj-9m-Qb3" secondAttribute="bottom" constant="138" id="WLj-tN-vBl"/>
+                            <constraint firstItem="Pj0-Fz-QJY" firstAttribute="top" secondItem="5gd-ri-QK9" secondAttribute="bottom" constant="80" id="cw2-8T-X8r"/>
+                            <constraint firstItem="5gd-ri-QK9" firstAttribute="centerX" secondItem="Vm7-GK-aQy" secondAttribute="centerX" id="d1e-W3-BVd"/>
+                            <constraint firstItem="Pj0-Fz-QJY" firstAttribute="centerX" secondItem="Vm7-GK-aQy" secondAttribute="centerX" id="yHv-Gk-qH3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="loger" destination="Pj0-Fz-QJY" id="h2d-IO-XSe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dVZ-5o-1UF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1768" y="347"/>
+        </scene>
         <!--Upgrade Device Controller-->
         <scene sceneID="8ec-Dd-YCI">
             <objects>
-                <viewController storyboardIdentifier="upgrade" id="xvA-es-Ta4" customClass="UpgradeDeviceController" customModule="SensoroSensorKitTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="upgrade" id="xvA-es-Ta4" customClass="UpgradeDeviceController" customModule="SensoroSensorDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="72O-Us-Cak"/>
                         <viewControllerLayoutGuide type="bottom" id="yhV-Ah-WpZ"/>

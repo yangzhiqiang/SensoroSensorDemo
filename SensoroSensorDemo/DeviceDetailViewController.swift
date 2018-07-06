@@ -145,13 +145,26 @@ class DeviceDetailViewController: UITableViewController {
         });
         alert.addAction(upgrade);
         
+        let connect = UIAlertAction(title : "外部连接测试",
+                                    style : .default,
+                                    handler:{ action in
+                                        if let storyboard = self.storyboard {
+                                            if let contrller = storyboard.instantiateViewController(withIdentifier: "externalConnect") as? ExternalConnectTestController {
+                                                
+                                                contrller.device = self.device;
+                                                self.navigationController?.pushViewController(contrller, animated: true);
+                                            }
+                                        }
+        });
+        alert.addAction(connect);
+
         let cancel = UIAlertAction(title : "取消",
                                    style : .default,
                                    handler:{ action in
                                     alert.dismiss(animated: true, completion: nil);
         });
         alert.addAction(cancel);
-        
+
         self.present(alert,animated:true,completion:nil);
     }
 
