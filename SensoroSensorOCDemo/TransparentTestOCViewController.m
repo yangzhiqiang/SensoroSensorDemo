@@ -56,7 +56,7 @@
             [SVProgressHUD showErrorWithStatus:@"连接失败"];
         }else{
             [SVProgressHUD showSuccessWithStatus:@"连接成功"];
-            [_connectBtn setTitle:@"断开连接" forState:UIControlStateNormal];
+            [self->_connectBtn setTitle:@"断开连接" forState:UIControlStateNormal];
         }
     } notify:^(NSData * _Nullable data, NSError * _Nullable error) {
         if (error != nil ){
