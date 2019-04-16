@@ -23,17 +23,16 @@
 		632AF18F1D1BE9DF00557B98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 632AF18D1D1BE9DF00557B98 /* Main.storyboard */; };
 		632AF1911D1BE9DF00557B98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 632AF1901D1BE9DF00557B98 /* Assets.xcassets */; };
 		632AF1941D1BE9DF00557B98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 632AF1921D1BE9DF00557B98 /* LaunchScreen.storyboard */; };
+		63307DB2226590BD00A35B5A /* SensoroSensorKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63BE46E41D1CED7200C038B1 /* SensoroSensorKit.framework */; };
+		63307DB3226590BD00A35B5A /* SensoroSensorKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 63BE46E41D1CED7200C038B1 /* SensoroSensorKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		63307DC2226591AC00A35B5A /* DFULibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63307DC1226591AC00A35B5A /* DFULibrary.framework */; };
 		633944F420EF156500A46D7D /* ExternalConnectTestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633944F320EF156500A46D7D /* ExternalConnectTestController.swift */; };
 		638641041E8DF4300080B200 /* TransparentTestOCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 638641031E8DF4300080B200 /* TransparentTestOCViewController.m */; };
 		6386410A1E8DFE3F0080B200 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 638641071E8DFE3F0080B200 /* SVProgressHUD.bundle */; };
 		6386410B1E8DFE3F0080B200 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 638641091E8DFE3F0080B200 /* SVProgressHUD.m */; };
-		639ED4CC207C8DBF00053D03 /* DFULibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 639ED4C9207C8D6800053D03 /* DFULibrary.framework */; };
 		639ED4CE207C8DBF00053D03 /* SwiftProtobuf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 639ED4C8207C8D6700053D03 /* SwiftProtobuf.framework */; };
-		639ED4DA207C8F2400053D03 /* DFULibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 639ED4C9207C8D6800053D03 /* DFULibrary.framework */; };
-		639ED4DB207C8F2400053D03 /* DFULibrary.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 639ED4C9207C8D6800053D03 /* DFULibrary.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		639ED4DC207C8F2400053D03 /* SwiftProtobuf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 639ED4C8207C8D6700053D03 /* SwiftProtobuf.framework */; };
 		639ED4DD207C8F2400053D03 /* SwiftProtobuf.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 639ED4C8207C8D6700053D03 /* SwiftProtobuf.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		639ED4DF207C8F5700053D03 /* DFULibrary.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 639ED4C9207C8D6800053D03 /* DFULibrary.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		639ED4E1207C8F5700053D03 /* SwiftProtobuf.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 639ED4C8207C8D6700053D03 /* SwiftProtobuf.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		639ED4F5207F021000053D03 /* UpgradeDeviceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639ED4F4207F020F00053D03 /* UpgradeDeviceController.swift */; };
 		639ED4F8207F057E00053D03 /* UpgradeDeviceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 639ED4F7207F057E00053D03 /* UpgradeDeviceController.m */; };
@@ -41,8 +40,6 @@
 		639ED52E207F56AE00053D03 /* firmware in Resources */ = {isa = PBXBuildFile; fileRef = 639ED52D207F56AD00053D03 /* firmware */; };
 		63BE46E61D1CEDB700C038B1 /* SensoroSensorKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63BE46E41D1CED7200C038B1 /* SensoroSensorKit.framework */; };
 		63BE46E71D1CEDB700C038B1 /* SensoroSensorKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 63BE46E41D1CED7200C038B1 /* SensoroSensorKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		63BE46E81D1CEF1C00C038B1 /* SensoroSensorKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63BE46E41D1CED7200C038B1 /* SensoroSensorKit.framework */; };
-		63BE46E91D1CEF1C00C038B1 /* SensoroSensorKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 63BE46E41D1CED7200C038B1 /* SensoroSensorKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		63F9537A1F6F9E0F00C79614 /* SensorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F953791F6F9E0F00C79614 /* SensorCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -53,7 +50,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				639ED4DB207C8F2400053D03 /* DFULibrary.framework in Embed Frameworks */,
 				639ED4DD207C8F2400053D03 /* SwiftProtobuf.framework in Embed Frameworks */,
 				63BE46E71D1CEDB700C038B1 /* SensoroSensorKit.framework in Embed Frameworks */,
 			);
@@ -66,9 +62,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				639ED4DF207C8F5700053D03 /* DFULibrary.framework in Embed Frameworks */,
 				639ED4E1207C8F5700053D03 /* SwiftProtobuf.framework in Embed Frameworks */,
-				63BE46E91D1CEF1C00C038B1 /* SensoroSensorKit.framework in Embed Frameworks */,
+				63307DB3226590BD00A35B5A /* SensoroSensorKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -81,6 +76,7 @@
 		631DB5151E8A696D00A9F584 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
 		631DB5161E8A696D00A9F584 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
 		631DB5191E8A69A300A9F584 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
+		631DCE5421DCB28B004F8436 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		632040A21D1BECFD00F89B1C /* DeviceDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceDetailViewController.swift; sourceTree = "<group>"; };
 		632040A81D1BEECE00F89B1C /* SensoroSensorOCDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SensoroSensorOCDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		632040AB1D1BEECE00F89B1C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -101,6 +97,7 @@
 		632AF1901D1BE9DF00557B98 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		632AF1931D1BE9DF00557B98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		632AF1951D1BE9DF00557B98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63307DC1226591AC00A35B5A /* DFULibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DFULibrary.framework; sourceTree = "<group>"; };
 		633944F320EF156500A46D7D /* ExternalConnectTestController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExternalConnectTestController.swift; sourceTree = "<group>"; };
 		638641021E8DF4300080B200 /* TransparentTestOCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransparentTestOCViewController.h; sourceTree = "<group>"; };
 		638641031E8DF4300080B200 /* TransparentTestOCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransparentTestOCViewController.m; sourceTree = "<group>"; };
@@ -108,7 +105,6 @@
 		638641081E8DFE3F0080B200 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
 		638641091E8DFE3F0080B200 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
 		639ED4C8207C8D6700053D03 /* SwiftProtobuf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SwiftProtobuf.framework; sourceTree = "<group>"; };
-		639ED4C9207C8D6800053D03 /* DFULibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DFULibrary.framework; sourceTree = "<group>"; };
 		639ED4F4207F020F00053D03 /* UpgradeDeviceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpgradeDeviceController.swift; sourceTree = "<group>"; };
 		639ED4F6207F057E00053D03 /* UpgradeDeviceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UpgradeDeviceController.h; sourceTree = "<group>"; };
 		639ED4F7207F057E00053D03 /* UpgradeDeviceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UpgradeDeviceController.m; sourceTree = "<group>"; };
@@ -123,7 +119,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				639ED4DA207C8F2400053D03 /* DFULibrary.framework in Frameworks */,
 				639ED4DC207C8F2400053D03 /* SwiftProtobuf.framework in Frameworks */,
 				63BE46E61D1CEDB700C038B1 /* SensoroSensorKit.framework in Frameworks */,
 			);
@@ -133,9 +128,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				639ED4CC207C8DBF00053D03 /* DFULibrary.framework in Frameworks */,
+				63307DC2226591AC00A35B5A /* DFULibrary.framework in Frameworks */,
 				639ED4CE207C8DBF00053D03 /* SwiftProtobuf.framework in Frameworks */,
-				63BE46E81D1CEF1C00C038B1 /* SensoroSensorKit.framework in Frameworks */,
+				63307DB2226590BD00A35B5A /* SensoroSensorKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,6 +153,14 @@
 				631DB5161E8A696D00A9F584 /* SVProgressHUD.m */,
 			);
 			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+		631DCE5321DCB28A004F8436 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				631DCE5421DCB28B004F8436 /* libz.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		632040A91D1BEECE00F89B1C /* SensoroSensorOCDemo */ = {
@@ -199,6 +202,7 @@
 				632AF1881D1BE9DF00557B98 /* SensoroSensorDemo */,
 				632040A91D1BEECE00F89B1C /* SensoroSensorOCDemo */,
 				632AF1871D1BE9DF00557B98 /* Products */,
+				631DCE5321DCB28A004F8436 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -253,7 +257,7 @@
 		63BE46E31D1CED7200C038B1 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
-				639ED4C9207C8D6800053D03 /* DFULibrary.framework */,
+				63307DC1226591AC00A35B5A /* DFULibrary.framework */,
 				639ED4C8207C8D6700053D03 /* SwiftProtobuf.framework */,
 				63BE46E41D1CED7200C038B1 /* SensoroSensorKit.framework */,
 			);
@@ -306,7 +310,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = Sensoro;
 				TargetAttributes = {
 					632040A71D1BEECE00F89B1C = {
@@ -322,7 +326,7 @@
 			};
 			buildConfigurationList = 632AF1811D1BE9DF00557B98 /* Build configuration list for PBXProject "SensoroSensorDemo" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -472,6 +476,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -520,6 +525,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -527,6 +533,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -568,6 +575,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -575,6 +583,7 @@
 		632AF1991D1BE9DF00557B98 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8E42QMX22R;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -587,13 +596,14 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = SensoroSensorDemo/BridgingHeader.h;
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
 		632AF19A1D1BE9DF00557B98 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8E42QMX22R;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -606,7 +616,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = SensoroSensorDemo/BridgingHeader.h;
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
